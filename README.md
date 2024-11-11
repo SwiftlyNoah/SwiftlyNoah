@@ -8,14 +8,15 @@ I'm Noah, a senior at Noble and Greenough School. I like making apps, websites, 
 
 <p align="center">
   <a href="https://github.com/tidepool-org/Loop/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_1.png" alt="Loop 1" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/LoopKit/Loop/commits/dev/?author=SwiftlyNoah)"><img src="app_images/loop_2.png" alt="Loop 2" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/LoopKit/Loop/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_2.png" alt="Loop 2" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/LoopKit/LoopKit/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_3.png" alt="Loop 3" width="150px"></a>
 </p>
 
 <details>
   <summary>Read more</summary>
-  I have worked on Loop, an automated isulin delivery system, as both an employee at [The Tidepool Project](https://www.tidepool.org), where I developed new features for the FDA-approved system Tidepool Loop, and as an open-source contributor to DIY Loop, used by more than 20,000 patients around the world. This special project accounts for the majority of my commits on this website and is a pivotal part of who I am. Not only has it changed my life by helping to ease the burden of type one diabets, it has taught me the power of code.
+  I have worked on Loop, an automated insulin delivery system, both as an employee at <a href="https://www.tidepool.org">The Tidepool Project</a>, where I developed new features for the FDA-approved system Tidepool Loop, and as an open-source contributor to DIY Loop, which is used by more than 20,000 patients around the world. This project accounts for the majority of my commits on this website and is a pivotal part of who I am. Not only has it changed my life by helping to ease the burden of type 1 diabetes, but it has also taught me the power of code.
 </details>
+
 
 ---
 
@@ -29,7 +30,7 @@ I'm Noah, a senior at Noble and Greenough School. I like making apps, websites, 
 
 <details>
   <summary>Read more</summary>
-  These apps, published on the Apple App Store by Noble and Greenough School and Appier LLC, respectively, were programmed by me and are available free of charge. These apps combine for more than 8000 downloads, 2 million sessions, and hundreds of daily active users. These apps consist of an all-encompassing system to improve the ilves of students and teachers, a daily diary and mood tracker built to improve happiness, and finally a fun, social-networking game where users take quizzes about themselves and send them to their friends to determine who knows them best. While my apps span a variaty of categories, each one was bulit with love and purpose to brighten the lives of others.
+  These apps, published on the Apple App Store by Noble and Greenough School and Appier LLC, respectively, were programmed by me and are available free of charge. They consist of an all-encompassing system to improve the lives of students and teachers, a daily diary and mood tracker built to improve happiness, and finally a fun, social-networking game where users take quizzes about themselves and send them to their friends to determine who knows them best. The apps have over 8,000 downloads, 2 million total sessions, and hundreds of daily active users. While my apps span a variety of categories, each one was built with love and purpose to brighten the lives of others.
 </details>
 
 
