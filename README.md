@@ -1,4 +1,4 @@
-# Hey!
+# Hey! 👋
 I'm Noah, a senior at Noble and Greenough School. I like making apps, websites, games, programs, and medical tools for friends and strangers all around the world.
 
 ## Check out some of my work:
