@@ -1,5 +1,5 @@
 # Hey! 👋
-I'm Noah, a freshman at Harvard College concentrating in Computer Science and Applied Math. I like making apps, websites, games, programs, and medical tools for friends and strangers all around the world.
+I'm Noah, a freshman at Harvard College concentrating in Computer Science and Applied Math. I like making apps, AI/ML projects, websites, games, programs, and medical tools for friends and strangers all around the world.
 
 ## Check out some of my work:
 
@@ -39,14 +39,12 @@ I'm Noah, a freshman at Harvard College concentrating in Computer Science and Ap
 ### Open Source Apps
 
 <p align="center">
-  <a href="https://github.com/SwiftlyNoah/CapstoneMachineLearning"><img src="app_images/app_4.png" alt="App 4" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/FruitDetector"><img src="app_images/app_5.png" alt="App 5" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/WheresWaldo"><img src="app_images/app_6.png" alt="App 6" width="150px"></a>
-</p>
-<p align="center" style="margin-top: 20px;">
-  <a href="https://github.com/SwiftlyNoah/AzulScoring"><img src="app_images/app_7.png" alt="App 7" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/RecycleBot"><img src="app_images/app_8.png" alt="App 8" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/MagneticPoetry"><img src="app_images/app_9.png" alt="App 9" width="150px"></a>
+  <a href="https://github.com/SwiftlyNoah/CapstoneMachineLearning"><img src="app_images/app_4.png" alt="App 4" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/SwiftlyNoah/FruitDetector"><img src="app_images/app_5.png" alt="App 5" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/SwiftlyNoah/WheresWaldo"><img src="app_images/app_6.png" alt="App 6" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/SwiftlyNoah/AzulScoring"><img src="app_images/app_7.png" alt="App 7" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/SwiftlyNoah/RecycleBot"><img src="app_images/app_8.png" alt="App 8" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/SwiftlyNoah/MagneticPoetry"><img src="app_images/app_9.png" alt="App 9" width="100px"></a>
 </p>
 
 <details>
@@ -54,4 +52,16 @@ I'm Noah, a freshman at Harvard College concentrating in Computer Science and Ap
   I value open-source projects as a way to give back to the community that has helped me throughout my coding journey. These apps are not yet on the App Store, but are still my beloved original creations. Many of these projects are AI-focused, as it is a particular interest of mine within the field of computer science.
 </details>
 
+---
+
+### More Projects
+
+- 🏃 **Activity Detector** — Classifies movement types from iPhone motion data using a neural network architecture tuned through varying layers, neurons, and temporal input strategies.  
+  [GitHub → ActivityDetector](https://github.com/SwiftlyNoah/ActivityDetector)
+
+- 🏫 **Nobles Clubs Directory** — A Vue-based web app [live on the internet](nobilis.nobles.edu/clubs) that displays student organizations and supports club leader/admin editing.  
+  [GitHub → NoblesClubsDirectory](https://github.com/SwiftlyNoah/NoblesClubsDirectory) 
+
+- 💰 **NoahCoin** — A secure, ECDSA-signed cryptocurrency prototype and backend server created from scratch in Python.  
+  [GitHub → NoahCoin](https://github.com/SwiftlyNoah/NoahCoin)
 
