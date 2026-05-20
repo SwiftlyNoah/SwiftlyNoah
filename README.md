@@ -1,5 +1,5 @@
 # Hey! 👋
-I'm Noah, a freshman at Harvard College concentrating in Computer Science and Applied Math. I like making apps, AI/ML projects, websites, games, programs, and medical tools for friends and strangers all around the world.
+I'm Noah, a sophomore at Harvard College concentrating in Computer Science and Economics. I like making apps, AI/ML projects, websites, games, programs, and medical tools for friends and strangers all around the world.
 
 ## Check out some of my work:
 
