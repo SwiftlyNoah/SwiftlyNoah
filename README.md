@@ -1,70 +1,194 @@
-# Hey! 👋
-I'm Noah, a sophomore at Harvard College concentrating in Computer Science and Economics. I like making apps, AI/ML projects, websites, games, programs, and medical tools for friends and strangers all around the world.
+<div align="center">
 
-## Check out some of my work:
+# Noah Brauner
 
-### Automated Insulin Delivery Systems
+**Computer Science & Economics @ Harvard**
+
+*Decision-making under incomplete information — game theory, equilibrium computation,<br>and the occasional shipped product.*
+
+<br>
+
+[![Research](https://img.shields.io/badge/Research-Red%2FBlack%20Solver-1f2937?style=for-the-badge&labelColor=111827)](https://github.com/SwiftlyNoah/redblack-research)
+[![Play](https://img.shields.io/badge/Play-playredblack.com-be123c?style=for-the-badge&labelColor=111827)](https://playredblack.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-noahbrauner-0a66c2?style=for-the-badge&labelColor=111827)](https://www.linkedin.com/in/noahbrauner/)
+[![Email](https://img.shields.io/badge/Email-nbrauner-4b5563?style=for-the-badge&labelColor=111827)](mailto:nbrauner@college.harvard.edu)
+
+</div>
+
+<br>
+
+---
+
+<div align="center">
+
+## 🃏 &nbsp;Red/Black — Counting and Solving a Hidden-Information Game
+
+</div>
+
+A three-paper series on **Red/Black**, a hidden-information bidding game played over a shared
+52-card deck in which only color matters. The spine: define the real game exactly, solve its
+class abstraction exactly and measure what the abstraction costs, then carry beliefs and pursue
+a certified bound on real-game exploitability.
+
+<div align="center">
+
+|  |  |
+|:--|:--|
+| **Perfect-recall infosets in the real game** | `2,448,351,139,319,171,077,272,326,424,233,304` — counted, not estimated |
+| **Public history tree** | 5.3 × 10³⁴ decision histories |
+| **Solved object** | 5,721 public classes, one subgame per round, bootstrapped through a layered DAG |
+| **Method** | Vector-form CFR+ — dense matrix ops over the whole solve |
+| **Value of the abstraction** | 51.22% to the opening seat |
+| **Second-generation solve** | Full re-solve in **2 hours on a laptop**, mirrors exact by construction |
+| **Certified exploitability** | ≥ 0.598/game — driven to **~0.013** under full belief carrying |
+
+</div>
+
+**Paper I** — *Rules, Deterministic Dynamics, and Exact State Enumeration.* The game as a
+deterministic acyclic transition system. Three structural results — determinism once the deal is
+fixed, order-irrelevance of flips within a contest, and a public projection down to two integers
+per seat — collapse the state space enough to make the exact infoset count tractable. Then a proof
+that every reachable posterior factorizes over the class prior into two per-seat tilts.
+
+**Paper II** — *Solving the Belief-Reset Abstraction Exactly.* Built for a reader who has never
+seen counterfactual regret minimization: regret → regret matching → counterfactual regret → CFR+,
+from the definition up. The contribution isn't CFR+ — it's the decomposed object it runs on, and
+an honest measurement of what the decomposition costs: reach-weighted TV of 0.842 between the class
+prior and the true posterior, and a theorem exhibiting an action the abstraction plays on-path with
+probability 0.97 that is *dominated* in the real game.
+
+**Paper III** — *Belief Carrying, Safe Re-Solving, and the Certificate Problem.* The upper-bound
+program, shipped honestly as a program. A safe-resolving gadget with live-measured margins and an
+opponent-model-free composition theorem. Current audited status stated plainly: the sandwich is
+`[0.013, trivial]`, and the whole remaining distance is located in one named quantity.
+
+> The papers carry dated **incident boxes** preserving measured mistakes as citable lessons — a
+> convergence meter that read uniformly green while seat-mirror antisymmetry was violated by 0.114,
+> the negative-exploitability trap, and a 216,000-game head-to-head overturn. Every count in Paper I
+> is re-derived from `RULES.md` by a dependency-free script, so agreement with the shipped rules
+> engine is evidence rather than tautology.
+
+📄 **[Read the papers →](https://github.com/SwiftlyNoah/redblack-research)** &nbsp;·&nbsp;
+🎮 **[Play the game →](https://playredblack.com)**
+
+<br>
+
+---
+
+<div align="center">
+
+## 🧮 &nbsp;Reinforcement Learning Against a Theorem Prover
+
+</div>
+
+Co-authored a closed-loop RL pipeline that fine-tunes **Qwen3-8B** against the **Lean 4** compiler
+as an exact, unhackable reward — no learned reward model to game. GSM8K accuracy **79.0% → 86.5%**
+(n=200, p=0.0046), with no measured regression across five alignment and sycophancy benchmarks.
+
+<br>
+
+---
+
+<div align="center">
+
+## 💉 &nbsp;Automated Insulin Delivery
+
+</div>
+
 <details>
-  <summary>Read more</summary>
+  <summary><b>Read more</b></summary>
+  <br>
   I have worked on Loop, an automated insulin delivery system, both as an employee at <a href="https://www.tidepool.org">The Tidepool Project</a>, where I developed new features for the FDA-approved system Tidepool Loop, and as an open-source contributor to DIY Loop, which is used by more than 20,000 patients around the world. This project represents much of my work on GitHub and is central to who I am. Loop has not only improved my life by easing the burden of type 1 diabetes but has also shown me the extraordinary power of code to create meaningful, far-reaching impact.
 </details>
 
 <p align="center">
-  <a href="https://github.com/tidepool-org/Loop/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_1.png" alt="Loop 1" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/LoopKit/Loop/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_2.png" alt="Loop 2" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/LoopKit/LoopKit/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_3.png" alt="Loop 3" width="150px"></a>
+  <a href="https://github.com/tidepool-org/Loop/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_1.png" alt="Loop" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/LoopKit/Loop/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_2.png" alt="Loop" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/LoopKit/LoopKit/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_3.png" alt="LoopKit" width="150px"></a>
 </p>
 
-
+<br>
 
 ---
 
-### Apps on the App Store
+<div align="center">
+
+## 📱 &nbsp;Shipped — App Store
+
+</div>
+
 <details>
-  <summary>Read more</summary>
+  <summary><b>Read more</b></summary>
+  <br>
 These apps, published on the Apple App Store by Noble and Greenough School and Appier LLC, were programmed by me and are available free of charge. They include a comprehensive platform designed to support students and teachers, a daily journal and mood tracker that promotes happiness, and a social game where users test how well their friends know them. Collectively, the apps have surpassed 8,000 downloads, accumulated over 2 million sessions, and maintain hundreds of daily active users. Though they span diverse categories, each was created with the shared goal of making life a little brighter for others.
 </details>
 
 <p align="center">
-  <a href="https://apps.apple.com/us/app/nobles-2-0/id1597945731"><img src="app_images/app_1.png" alt="App 1" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://apps.apple.com/us/app/happiness-hacker/id6469530403"><img src="app_images/app_2.png" alt="App 2" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://apps.apple.com/us/app/know-me-quiz-your-friends/id1526856498"><img src="app_images/app_3.png" alt="App 3" width="150px"></a>
+  <a href="https://apps.apple.com/us/app/nobles-2-0/id1597945731"><img src="app_images/app_1.png" alt="Nobles 2.0" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://apps.apple.com/us/app/happiness-hacker/id6469530403"><img src="app_images/app_2.png" alt="Happiness Hacker" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://apps.apple.com/us/app/know-me-quiz-your-friends/id1526856498"><img src="app_images/app_3.png" alt="Know Me" width="150px"></a>
 </p>
 
+<br>
 
 ---
 
-### Open Source Apps
+<div align="center">
+
+## 🔓 &nbsp;Open Source
+
+</div>
+
 <details>
-  <summary>Read more</summary>
-  I value open-source projects as a way to give back to the community that has helped me throughout my coding journey. These apps my original creations that have not made it to the App Store. Many of these projects are AI-focused, as it is a particular interest of mine within the field of computer science.
+  <summary><b>Read more</b></summary>
+  <br>
+  I value open-source projects as a way to give back to the community that has helped me throughout my coding journey. These apps are my original creations that have not made it to the App Store. Many of these projects are AI-focused, as it is a particular interest of mine within the field of computer science.
 </details>
 
 <p align="center">
-  <a href="https://github.com/SwiftlyNoah/CapstoneMachineLearning"><img src="app_images/app_4.png" alt="App 4" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/FruitDetector"><img src="app_images/app_5.png" alt="App 5" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/WheresWaldo"><img src="app_images/app_6.png" alt="App 6" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/AzulScoring"><img src="app_images/app_7.png" alt="App 7" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/RecycleBot"><img src="app_images/app_8.png" alt="App 8" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/MagneticPoetry"><img src="app_images/app_9.png" alt="App 9" width="100px"></a>
+  <a href="https://github.com/SwiftlyNoah/CapstoneMachineLearning"><img src="app_images/app_4.png" alt="Capstone ML" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/SwiftlyNoah/FruitDetector"><img src="app_images/app_5.png" alt="Fruit Detector" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/SwiftlyNoah/WheresWaldo"><img src="app_images/app_6.png" alt="Where's Waldo" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/SwiftlyNoah/AzulScoring"><img src="app_images/app_7.png" alt="Azul Scoring" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/SwiftlyNoah/RecycleBot"><img src="app_images/app_8.png" alt="RecycleBot" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/SwiftlyNoah/MagneticPoetry"><img src="app_images/app_9.png" alt="Magnetic Poetry" width="100px"></a>
 </p>
 
----
-
-### More Projects
-
-- 🏃 **Activity Detector** — Classifies movement types from iPhone motion data using a neural network architecture tuned through varying layers, neurons, and temporal input strategies.  
-  [GitHub → ActivityDetector](https://github.com/SwiftlyNoah/ActivityDetector)
-
-- 🏫 **Nobles Clubs Directory** — A Vue-based web app [live on the internet](https://nobilis.nobles.edu/clubs) that displays student organizations and supports club leader/admin editing.  
-  [GitHub → NoblesClubsDirectory](https://github.com/SwiftlyNoah/NoblesClubsDirectory) 
-
-- 💰 **NoahCoin** — A secure, ECDSA-signed cryptocurrency prototype and backend server created from scratch in Python.  
-  [GitHub → NoahCoin](https://github.com/SwiftlyNoah/NoahCoin)
+<br>
 
 ---
 
-## 📫 Connect with Me
-- [LinkedIn](https://www.linkedin.com/in/noahbrauner/)
-- [Email](mailto:nbrauner@college.harvard.edu)
+<div align="center">
 
+## 🧪 &nbsp;More
+
+</div>
+
+|  |  |
+|:--|:--|
+| 🏃 **[ActivityDetector](https://github.com/SwiftlyNoah/ActivityDetector)** | Classifies movement types from iPhone motion data with a neural net tuned across layer counts, widths, and temporal input strategies |
+| 💰 **[NoahCoin](https://github.com/SwiftlyNoah/NoahCoin)** | An ECDSA-signed cryptocurrency prototype and backend server, built from scratch in Python |
+| 🥏 **[FrisbeeAnalysis](https://github.com/SwiftlyNoah/FrisbeeAnalysis)** | Analysis tools for the Harvard Redline ultimate frisbee team |
+| 🏛 **[PikesvilleOpportunity](https://github.com/SwiftlyNoah/PikesvilleOpportunity)** | Econometrics paper on opportunity and place, written for Ec 50 |
+| 🗺 **[HideAndCSeek50](https://github.com/SwiftlyNoah/HideAndCSeek50)** | A geolocation hide-and-seek game inspired by *Jet Lag: The Game* |
+| 🏫 **[NoblesClubsDirectory](https://github.com/SwiftlyNoah/NoblesClubsDirectory)** | A Vue web app [live in production](https://nobilis.nobles.edu/clubs) for student organizations |
+| 📰 **[TheCrimsonApp](https://github.com/SwiftlyNoah/TheCrimsonApp)** | An iOS article reader for thecrimson.com |
+| 🗳 **[TidemanVisualizer](https://github.com/SwiftlyNoah/TidemanVisualizer)** | Visualizing the Tideman ranked-pairs voting method |
+
+<br>
+
+---
+
+<div align="center">
+
+### Tools
+
+`Python` &nbsp;·&nbsp; `C` &nbsp;·&nbsp; `SQL` &nbsp;·&nbsp; `TypeScript` &nbsp;·&nbsp; `Java` &nbsp;·&nbsp; `Swift` &nbsp;·&nbsp; `Kotlin` &nbsp;·&nbsp; `TeX`
+
+CFR / CFR+ &nbsp;·&nbsp; equilibrium computation &nbsp;·&nbsp; Monte Carlo &nbsp;·&nbsp; statistical inference &nbsp;·&nbsp; distributed compute
+
+<br>
+
+**[linkedin.com/in/noahbrauner](https://www.linkedin.com/in/noahbrauner/)** &nbsp;·&nbsp; **[nbrauner@college.harvard.edu](mailto:nbrauner@college.harvard.edu)**
+
+</div>
