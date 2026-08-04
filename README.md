@@ -4,7 +4,7 @@
 
 **Computer Science & Economics @ Harvard**
 
-*Decision-making under incomplete information — game theory, equilibrium computation,<br>and the occasional shipped product.*
+*Interested in game theory, quantitative finance, artificial intellignence, and automated insulin delivery systems*
 
 <br>
 
@@ -21,52 +21,12 @@
 
 <div align="center">
 
-## 🃏 &nbsp;Red/Black — Counting and Solving a Hidden-Information Game
+## Red/Black — Counting and Solving a Hidden-Information Game
 
 </div>
 
 A three-paper series on **Red/Black**, a hidden-information bidding game played over a shared
-52-card deck in which only color matters. The spine: define the real game exactly, solve its
-class abstraction exactly and measure what the abstraction costs, then carry beliefs and pursue
-a certified bound on real-game exploitability.
-
-<div align="center">
-
-|  |  |
-|:--|:--|
-| **Perfect-recall infosets in the real game** | `2,448,351,139,319,171,077,272,326,424,233,304` — counted, not estimated |
-| **Public history tree** | 5.3 × 10³⁴ decision histories |
-| **Solved object** | 5,721 public classes, one subgame per round, bootstrapped through a layered DAG |
-| **Method** | Vector-form CFR+ — dense matrix ops over the whole solve |
-| **Value of the abstraction** | 51.22% to the opening seat |
-| **Second-generation solve** | Full re-solve in **2 hours on a laptop**, mirrors exact by construction |
-| **Certified exploitability** | ≥ 0.598/game — driven to **~0.013** under full belief carrying |
-
-</div>
-
-**Paper I** — *Rules, Deterministic Dynamics, and Exact State Enumeration.* The game as a
-deterministic acyclic transition system. Three structural results — determinism once the deal is
-fixed, order-irrelevance of flips within a contest, and a public projection down to two integers
-per seat — collapse the state space enough to make the exact infoset count tractable. Then a proof
-that every reachable posterior factorizes over the class prior into two per-seat tilts.
-
-**Paper II** — *Solving the Belief-Reset Abstraction Exactly.* Built for a reader who has never
-seen counterfactual regret minimization: regret → regret matching → counterfactual regret → CFR+,
-from the definition up. The contribution isn't CFR+ — it's the decomposed object it runs on, and
-an honest measurement of what the decomposition costs: reach-weighted TV of 0.842 between the class
-prior and the true posterior, and a theorem exhibiting an action the abstraction plays on-path with
-probability 0.97 that is *dominated* in the real game.
-
-**Paper III** — *Belief Carrying, Safe Re-Solving, and the Certificate Problem.* The upper-bound
-program, shipped honestly as a program. A safe-resolving gadget with live-measured margins and an
-opponent-model-free composition theorem. Current audited status stated plainly: the sandwich is
-`[0.013, trivial]`, and the whole remaining distance is located in one named quantity.
-
-> The papers carry dated **incident boxes** preserving measured mistakes as citable lessons — a
-> convergence meter that read uniformly green while seat-mirror antisymmetry was violated by 0.114,
-> the negative-exploitability trap, and a 216,000-game head-to-head overturn. Every count in Paper I
-> is re-derived from `RULES.md` by a dependency-free script, so agreement with the shipped rules
-> engine is evidence rather than tautology.
+52-card deck in which only color matters. 
 
 📄 **[Read the papers →](https://github.com/SwiftlyNoah/redblack-research)** &nbsp;·&nbsp;
 🎮 **[Play the game →](https://playredblack.com)**
@@ -77,7 +37,7 @@ opponent-model-free composition theorem. Current audited status stated plainly: 
 
 <div align="center">
 
-## 🧮 &nbsp;Reinforcement Learning Against a Theorem Prover
+## Reinforcement Learning Against a Theorem Prover
 
 </div>
 
@@ -91,7 +51,7 @@ as an exact, unhackable reward — no learned reward model to game. GSM8K accura
 
 <div align="center">
 
-## 💉 &nbsp;Automated Insulin Delivery
+## Automated Insulin Delivery
 
 </div>
 
@@ -113,7 +73,7 @@ as an exact, unhackable reward — no learned reward model to game. GSM8K accura
 
 <div align="center">
 
-## 📱 &nbsp;Shipped — App Store
+## On the App Store
 
 </div>
 
@@ -135,7 +95,7 @@ These apps, published on the Apple App Store by Noble and Greenough School and A
 
 <div align="center">
 
-## 🔓 &nbsp;Open Source
+## Open Source
 
 </div>
 
@@ -160,7 +120,7 @@ These apps, published on the Apple App Store by Noble and Greenough School and A
 
 <div align="center">
 
-## 🧪 &nbsp;More
+## More Projects
 
 </div>
 
@@ -168,7 +128,6 @@ These apps, published on the Apple App Store by Noble and Greenough School and A
 |:--|:--|
 | 🏃 **[ActivityDetector](https://github.com/SwiftlyNoah/ActivityDetector)** | Classifies movement types from iPhone motion data with a neural net tuned across layer counts, widths, and temporal input strategies |
 | 💰 **[NoahCoin](https://github.com/SwiftlyNoah/NoahCoin)** | An ECDSA-signed cryptocurrency prototype and backend server, built from scratch in Python |
-| 🥏 **[FrisbeeAnalysis](https://github.com/SwiftlyNoah/FrisbeeAnalysis)** | Analysis tools for the Harvard Redline ultimate frisbee team |
 | 🏛 **[PikesvilleOpportunity](https://github.com/SwiftlyNoah/PikesvilleOpportunity)** | Econometrics paper on opportunity and place, written for Ec 50 |
 | 🗺 **[HideAndCSeek50](https://github.com/SwiftlyNoah/HideAndCSeek50)** | A geolocation hide-and-seek game inspired by *Jet Lag: The Game* |
 | 🏫 **[NoblesClubsDirectory](https://github.com/SwiftlyNoah/NoblesClubsDirectory)** | A Vue web app [live in production](https://nobilis.nobles.edu/clubs) for student organizations |
