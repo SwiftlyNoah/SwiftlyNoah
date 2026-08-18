@@ -4,7 +4,7 @@
 
 **Computer Science & Economics @ Harvard**
 
-*Interested in game theory, quantitative finance, artificial intellignence, and automated insulin delivery systems*
+*Interested in game theory, quantitative finance, artificial intelligence, and automated insulin delivery systems*
 
 <br>
 
@@ -130,7 +130,7 @@ These apps, published on the Apple App Store by Noble and Greenough School and A
 | 💰 **[NoahCoin](https://github.com/SwiftlyNoah/NoahCoin)** | An ECDSA-signed cryptocurrency prototype and backend server, built from scratch in Python |
 | 🏛 **[PikesvilleOpportunity](https://github.com/SwiftlyNoah/PikesvilleOpportunity)** | Econometrics paper on opportunity and place, written for Ec 50 |
 | 🗺 **[HideAndCSeek50](https://github.com/SwiftlyNoah/HideAndCSeek50)** | A geolocation hide-and-seek game inspired by *Jet Lag: The Game* |
-| 🏫 **[NoblesClubsDirectory](https://github.com/SwiftlyNoah/NoblesClubsDirectory)** | A Vue web app [live in production](https://nobilis.nobles.edu/clubs) for student organizations |
+| 🏫 **[NoblesClubsDirectory](https://nobilis.nobles.edu/clubs)** | A Vue web app live in production for student organizations |
 | 📰 **[TheCrimsonApp](https://github.com/SwiftlyNoah/TheCrimsonApp)** | An iOS article reader for thecrimson.com |
 | 🗳 **[TidemanVisualizer](https://github.com/SwiftlyNoah/TidemanVisualizer)** | Visualizing the Tideman ranked-pairs voting method |
 
