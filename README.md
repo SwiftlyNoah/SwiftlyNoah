@@ -2,152 +2,118 @@
 
 # Noah Brauner
 
-**Computer Science & Economics @ Harvard**
+Computer Science and Economics, Harvard
 
-*Interested in game theory, quantitative finance, artificial intelligence, and automated insulin delivery systems*
+Game theory, quantitative finance, and automated insulin delivery.
 
-<br>
-
-[![Research](https://img.shields.io/badge/Research-Red%2FBlack%20Solver-1f2937?style=for-the-badge&labelColor=111827)](https://github.com/SwiftlyNoah/redblack-research)
-[![Play](https://img.shields.io/badge/Play-playredblack.com-be123c?style=for-the-badge&labelColor=111827)](https://playredblack.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-noahbrauner-0a66c2?style=for-the-badge&labelColor=111827)](https://www.linkedin.com/in/noahbrauner/)
-[![Email](https://img.shields.io/badge/Email-nbrauner-4b5563?style=for-the-badge&labelColor=111827)](mailto:nbrauner@college.harvard.edu)
+[Red/Black papers](https://github.com/SwiftlyNoah/redblack-research) &nbsp;·&nbsp;
+[playredblack.com](https://playredblack.com) &nbsp;·&nbsp;
+[LinkedIn](https://www.linkedin.com/in/noahbrauner/) &nbsp;·&nbsp;
+[nbrauner@college.harvard.edu](mailto:nbrauner@college.harvard.edu)
 
 </div>
-
-<br>
 
 ---
 
-<div align="center">
+## Red/Black: solving a hidden-information card game
 
-## Red/Black — Counting and Solving a Hidden-Information Game
+*2026 · [four papers](https://github.com/SwiftlyNoah/redblack-research) · [play it](https://playredblack.com)*
 
-</div>
+Red/Black is a bluffing game on a 52-card deck where only color matters. I built
+the game, then spent a summer trying to solve it, which meant pinning down how far
+from optimal my best strategy is rather than training a bot that looks strong.
 
-A three-paper series on **Red/Black**, a hidden-information bidding game played over a shared
-52-card deck in which only color matters. 
+The game has **2.4 × 10³³ information sets**, enumerated exactly rather than
+estimated, so it cannot be solved directly. Every route to an answer passes through
+an abstraction, and an abstraction can quietly destroy the quantity you are trying
+to measure. Most of the work is about preventing that.
 
-📄 **[Read the papers →](https://github.com/SwiftlyNoah/redblack-research)** &nbsp;·&nbsp;
-🎮 **[Play the game →](https://playredblack.com)**
+Against the strongest best-response probe I could build, the final strategy measures
+an exploitability lower bound of **−0.025, 95% CI [−0.044, −0.005]**, over 10,000
+paired games on a payoff range of 2. The probe loses, so the bound is negative. That
+says the probe ran out of room, not that the strategy is unbeatable. Its predecessor
+measured +0.034 on identical seeds; the difference resolves at **p = 3 × 10⁻⁵**.
 
-<br>
+The result comes from splitting one job across two solvers. Subgame values need to be
+unique and symmetric so that thousands of solutions compose without selection noise,
+which a quantal-response ladder provides. Policies need sharpness, which CFR+ provides.
+So values come from one solver, frozen, and policies from the other, re-solved against
+them.
 
----
-
-<div align="center">
-
-## Reinforcement Learning Against a Theorem Prover
-
-</div>
-
-Co-authored a closed-loop RL pipeline that fine-tunes **Qwen3-8B** against the **Lean 4** compiler
-as an exact, unhackable reward — no learned reward model to game. GSM8K accuracy **79.0% → 86.5%**
-(n=200, p=0.0046), with no measured regression across five alignment and sycophancy benchmarks.
-
-<br>
-
----
-
-<div align="center">
-
-## Automated Insulin Delivery
-
-</div>
-
-<details>
-  <summary><b>Read more</b></summary>
-  <br>
-  I have worked on Loop, an automated insulin delivery system, both as an employee at <a href="https://www.tidepool.org">The Tidepool Project</a>, where I developed new features for the FDA-approved system Tidepool Loop, and as an open-source contributor to DIY Loop, which is used by more than 20,000 patients around the world. This project represents much of my work on GitHub and is central to who I am. Loop has not only improved my life by easing the burden of type 1 diabetes but has also shown me the extraordinary power of code to create meaningful, far-reaching impact.
-</details>
-
-<p align="center">
-  <a href="https://github.com/tidepool-org/Loop/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_1.png" alt="Loop" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/LoopKit/Loop/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_2.png" alt="Loop" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/LoopKit/LoopKit/commits/dev/?author=SwiftlyNoah"><img src="app_images/loop_3.png" alt="LoopKit" width="150px"></a>
-</p>
-
-<br>
+The flagship paper also documents the experiment that failed first. I removed a
+provably-bad action from the solved game and expected an improvement. Exploitability
+quadrupled. The strategy store doubles as the bot's model of its opponent, and a model
+asserting an action is impossible breaks the moment a real opponent plays it. Pruning
+your own play is defense. Pruning your model of the world is blindness.
 
 ---
 
-<div align="center">
+## Reinforcement learning against a theorem prover
 
-## On the App Store
+*2025–2026 · co-authored*
 
-</div>
+A closed-loop RL pipeline that fine-tunes Qwen3-8B against the Lean 4 compiler, using
+compilation as an exact reward. There is no learned reward model, so there is nothing
+to game.
 
-<details>
-  <summary><b>Read more</b></summary>
-  <br>
-These apps, published on the Apple App Store by Noble and Greenough School and Appier LLC, were programmed by me and are available free of charge. They include a comprehensive platform designed to support students and teachers, a daily journal and mood tracker that promotes happiness, and a social game where users test how well their friends know them. Collectively, the apps have surpassed 8,000 downloads, accumulated over 2 million sessions, and maintain hundreds of daily active users. Though they span diverse categories, each was created with the shared goal of making life a little brighter for others.
-</details>
-
-<p align="center">
-  <a href="https://apps.apple.com/us/app/nobles-2-0/id1597945731"><img src="app_images/app_1.png" alt="Nobles 2.0" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://apps.apple.com/us/app/happiness-hacker/id6469530403"><img src="app_images/app_2.png" alt="Happiness Hacker" width="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://apps.apple.com/us/app/know-me-quiz-your-friends/id1526856498"><img src="app_images/app_3.png" alt="Know Me" width="150px"></a>
-</p>
-
-<br>
+GSM8K accuracy moved from **79.0% to 86.5%** (n = 200, p = 0.0046), with no measured
+regression across five alignment and sycophancy benchmarks.
 
 ---
 
-<div align="center">
+## Automated insulin delivery
 
-## Open Source
+I work on Loop, an automated insulin delivery system, and I use it myself.
 
-</div>
+At [the Tidepool Project](https://www.tidepool.org) I built features for Tidepool
+Loop, which is FDA-approved. As an open-source contributor to DIY Loop I have shipped
+changes used by more than 20,000 patients. This is most of my history on GitHub and it
+is the work I would defend hardest: it made my own type 1 diabetes easier to carry, and
+it is the clearest case I know of code mattering to people who will never read it.
 
-<details>
-  <summary><b>Read more</b></summary>
-  <br>
-  I value open-source projects as a way to give back to the community that has helped me throughout my coding journey. These apps are my original creations that have not made it to the App Store. Many of these projects are AI-focused, as it is a particular interest of mine within the field of computer science.
-</details>
-
-<p align="center">
-  <a href="https://github.com/SwiftlyNoah/CapstoneMachineLearning"><img src="app_images/app_4.png" alt="Capstone ML" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/FruitDetector"><img src="app_images/app_5.png" alt="Fruit Detector" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/WheresWaldo"><img src="app_images/app_6.png" alt="Where's Waldo" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/AzulScoring"><img src="app_images/app_7.png" alt="Azul Scoring" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/RecycleBot"><img src="app_images/app_8.png" alt="RecycleBot" width="100px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/SwiftlyNoah/MagneticPoetry"><img src="app_images/app_9.png" alt="Magnetic Poetry" width="100px"></a>
-</p>
-
-<br>
+Commits: [tidepool-org/Loop](https://github.com/tidepool-org/Loop/commits/dev/?author=SwiftlyNoah)
+&nbsp;·&nbsp; [LoopKit/Loop](https://github.com/LoopKit/Loop/commits/dev/?author=SwiftlyNoah)
+&nbsp;·&nbsp; [LoopKit/LoopKit](https://github.com/LoopKit/LoopKit/commits/dev/?author=SwiftlyNoah)
 
 ---
 
-<div align="center">
+## Selected work
 
-## More Projects
-
-</div>
-
-|  |  |
+| | |
 |:--|:--|
-| 🏃 **[ActivityDetector](https://github.com/SwiftlyNoah/ActivityDetector)** | Classifies movement types from iPhone motion data with a neural net tuned across layer counts, widths, and temporal input strategies |
-| 💰 **[NoahCoin](https://github.com/SwiftlyNoah/NoahCoin)** | An ECDSA-signed cryptocurrency prototype and backend server, built from scratch in Python |
-| 🏛 **[PikesvilleOpportunity](https://github.com/SwiftlyNoah/PikesvilleOpportunity)** | Econometrics paper on opportunity and place, written for Ec 50 |
-| 🗺 **[HideAndCSeek50](https://github.com/SwiftlyNoah/HideAndCSeek50)** | A geolocation hide-and-seek game inspired by *Jet Lag: The Game* |
-| 🏫 **[NoblesClubsDirectory](https://nobilis.nobles.edu/clubs)** | A Vue web app live in production for student organizations |
-| 📰 **[TheCrimsonApp](https://github.com/SwiftlyNoah/TheCrimsonApp)** | An iOS article reader for thecrimson.com |
-| 🗳 **[TidemanVisualizer](https://github.com/SwiftlyNoah/TidemanVisualizer)** | Visualizing the Tideman ranked-pairs voting method |
+| [**PikesvilleOpportunity**](https://github.com/SwiftlyNoah/PikesvilleOpportunity) | Econometrics paper on opportunity and place, written for Ec 50 |
+| [**NoahCoin**](https://github.com/SwiftlyNoah/NoahCoin) | An ECDSA-signed cryptocurrency and backend server, written from scratch in Python |
+| [**ActivityDetector**](https://github.com/SwiftlyNoah/ActivityDetector) | Classifies movement type from iPhone motion data, with a neural net tuned across layer counts, widths, and temporal input strategies |
+| [**TidemanVisualizer**](https://github.com/SwiftlyNoah/TidemanVisualizer) | Visualizes the Tideman ranked-pairs voting method |
+| [**CapstoneMachineLearning**](https://github.com/SwiftlyNoah/CapstoneMachineLearning) | Pneumonia classification from chest radiographs, deployed on-device with CoreML |
+| [**HideAndCSeek50**](https://github.com/SwiftlyNoah/HideAndCSeek50) | A geolocation hide-and-seek game, inspired by *Jet Lag: The Game* |
+| [**TheCrimsonApp**](https://github.com/SwiftlyNoah/TheCrimsonApp) | An iOS article reader for thecrimson.com |
 
-<br>
+---
+
+## Shipped
+
+Apps published by Noble and Greenough School and Appier LLC, written by me and free to
+download. Together they have passed **8,000 downloads and 2 million sessions**, with
+hundreds of daily active users.
+
+[Nobles 2.0](https://apps.apple.com/us/app/nobles-2-0/id1597945731), a platform for
+students and teachers &nbsp;·&nbsp;
+[Happiness Hacker](https://apps.apple.com/us/app/happiness-hacker/id6469530403), a daily
+journal and mood tracker &nbsp;·&nbsp;
+[Know Me](https://apps.apple.com/us/app/know-me-quiz-your-friends/id1526856498), a game
+about how well your friends know you
+
+Also in production: [the Nobles clubs directory](https://nobilis.nobles.edu/clubs), a Vue
+app for student organizations.
 
 ---
 
 <div align="center">
 
-### Tools
+`Python` &nbsp;·&nbsp; `C` &nbsp;·&nbsp; `SQL` &nbsp;·&nbsp; `TypeScript` &nbsp;·&nbsp; `Swift`
 
-`Python` &nbsp;·&nbsp; `C` &nbsp;·&nbsp; `SQL` &nbsp;·&nbsp; `TypeScript` &nbsp;·&nbsp; `Java` &nbsp;·&nbsp; `Swift` &nbsp;·&nbsp; `Kotlin` &nbsp;·&nbsp; `TeX`
-
-CFR / CFR+ &nbsp;·&nbsp; equilibrium computation &nbsp;·&nbsp; Monte Carlo &nbsp;·&nbsp; statistical inference &nbsp;·&nbsp; distributed compute
-
-<br>
-
-**[linkedin.com/in/noahbrauner](https://www.linkedin.com/in/noahbrauner/)** &nbsp;·&nbsp; **[nbrauner@college.harvard.edu](mailto:nbrauner@college.harvard.edu)**
+CFR and CFR+ &nbsp;·&nbsp; equilibrium computation &nbsp;·&nbsp; Monte Carlo &nbsp;·&nbsp;
+statistical inference &nbsp;·&nbsp; distributed compute
 
 </div>
