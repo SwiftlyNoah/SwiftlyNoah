@@ -1,46 +1,47 @@
 # Noah Brauner
 
-CS and Economics at Harvard. Game theory, quant finance, automated insulin delivery.
+CS and Economics at Harvard, class of 2029. Founder of Appier. Game theory, quant finance, medical devices.
 
-[Resume](https://github.com/SwiftlyNoah/Resume) ·
-[Red/Black papers](https://github.com/SwiftlyNoah/redblack-research) ·
 [playredblack.com](https://playredblack.com) ·
+[appiertech.com](https://www.appiertech.com) ·
 [LinkedIn](https://www.linkedin.com/in/noahbrauner/) ·
 [nbrauner@college.harvard.edu](mailto:nbrauner@college.harvard.edu)
 
 ---
 
+### Appier
+Branded mobile and web apps for independent schools, built on Veracross. Live at 2 schools with
+5k+ daily users. One React Native and TypeScript codebase ships to iOS, Android, web and macOS, with
+an isolated backend per school. (Private repo.)
+&nbsp;&nbsp;[appiertech.com](https://www.appiertech.com)
+
 ### Red/Black
-Solved a hidden-information bidding game with 2.4 × 10³³ information sets, counted
-exactly rather than estimated. The final strategy beats every best-response probe I
-could build against it. Four papers, plus the game itself.
+A hidden-information card game I invented, now live multiplayer at playredblack.com. Four papers:
+an exact count of its 2.4 × 10³³ information sets, a CFR+ solve (the algorithm behind poker
+solvers), and statistically tested bounds on how exploitable it is.
 &nbsp;&nbsp;[papers](https://github.com/SwiftlyNoah/redblack-research) · [play](https://playredblack.com)
 
 ### RL against a theorem prover
-Fine-tuned Qwen3-8B using the Lean 4 compiler as an exact reward, so there is no
-learned reward model to game. GSM8K 79.0% → 86.5% (n = 200, p = 0.0046).
+Fine-tuned Qwen3-8B using the Lean 4 compiler as an exact reward, so there is no learned reward
+model to game. GSM8K 79.0% → 86.5% (n = 200, p = 0.0046).
 
 ### Loop
-Automated insulin delivery. Built features for the FDA-approved Tidepool Loop at
-[Tidepool](https://www.tidepool.org), and DIY Loop contributions used by 20,000+
-patients. I run it on my own diabetes.
+Automated insulin delivery. Built Favorite Foods for Loop as a Tidepool intern, and have contributed
+to open-source Loop since 2022. I run it for my own type 1 diabetes. Interned on Dexcom's G7 mobile
+team in 2026.
 &nbsp;&nbsp;commits: [tidepool-org](https://github.com/tidepool-org/Loop/commits/dev/?author=SwiftlyNoah) ·
 [LoopKit/Loop](https://github.com/LoopKit/Loop/commits/dev/?author=SwiftlyNoah) ·
 [LoopKit](https://github.com/LoopKit/LoopKit/commits/dev/?author=SwiftlyNoah)
 
-### iOS
-Apps for Noble and Greenough School and Appier LLC. 8,000+ downloads, 2M+ sessions.
-&nbsp;&nbsp;[Nobles 2.0](https://apps.apple.com/us/app/nobles-2-0/id1597945731) ·
+---
+
+Also: [fifth-and-flip](https://github.com/SwiftlyNoah/fifth-and-flip) (card-trick protocol) ·
+[PikesvilleOpportunity](https://github.com/SwiftlyNoah/PikesvilleOpportunity) (econometrics paper) ·
+[HideAndCSeek50](https://github.com/SwiftlyNoah/HideAndCSeek50) (geolocation game) ·
+[ActivityDetector](https://github.com/SwiftlyNoah/ActivityDetector) (motion classification) ·
+[NoahCoin](https://github.com/SwiftlyNoah/NoahCoin) (cryptocurrency from scratch) ·
+[TidemanVisualizer](https://github.com/SwiftlyNoah/TidemanVisualizer) (ranked-pairs voting) ·
 [Happiness Hacker](https://apps.apple.com/us/app/happiness-hacker/id6469530403) ·
 [Know Me](https://apps.apple.com/us/app/know-me-quiz-your-friends/id1526856498)
 
----
-
-Also: [NoahCoin](https://github.com/SwiftlyNoah/NoahCoin) (cryptocurrency from scratch) ·
-[PikesvilleOpportunity](https://github.com/SwiftlyNoah/PikesvilleOpportunity) (econometrics paper) ·
-[ActivityDetector](https://github.com/SwiftlyNoah/ActivityDetector) (motion classification) ·
-[TidemanVisualizer](https://github.com/SwiftlyNoah/TidemanVisualizer) (ranked-pairs voting) ·
-[HideAndCSeek50](https://github.com/SwiftlyNoah/HideAndCSeek50) (geolocation game) ·
-[TheCrimsonApp](https://github.com/SwiftlyNoah/TheCrimsonApp) (iOS reader)
-
-`Python` `C` `SQL` `TypeScript` `Swift` · CFR+, equilibrium computation, Monte Carlo, distributed compute
+`Python` `TypeScript` `Swift` `C` `SQL` · CFR+, equilibrium computation, Monte Carlo, RL
